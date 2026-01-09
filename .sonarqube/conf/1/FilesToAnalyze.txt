@@ -1,0 +1,6 @@
+﻿C:\Users\Martina\source\repos\BackEnd_Intuit\BackEnd_Intuit.Application\DTOs\ClienteCreateDto.cs
+C:\Users\Martina\source\repos\BackEnd_Intuit\BackEnd_Intuit.Application\DTOs\ClienteDto.cs
+C:\Users\Martina\source\repos\BackEnd_Intuit\BackEnd_Intuit.Application\DTOs\ClienteUpdateDto.cs
+C:\Users\Martina\source\repos\BackEnd_Intuit\BackEnd_Intuit.Application\Interfaces\IClienteRepository.cs
+C:\Users\Martina\source\repos\BackEnd_Intuit\BackEnd_Intuit.Application\Interfaces\IClienteService.cs
+C:\Users\Martina\source\repos\BackEnd_Intuit\BackEnd_Intuit.Application\Services\ClienteService.cs

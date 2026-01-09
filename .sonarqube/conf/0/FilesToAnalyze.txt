@@ -1,0 +1,2 @@
+﻿C:\Users\Martina\source\repos\BackEnd_Intuit\BackEnd_Intuit.Domain\Entities\Cliente.cs
+C:\Users\Martina\source\repos\BackEnd_Intuit\BackEnd_Intuit.Domain\Exceptions\DomainException.cs
