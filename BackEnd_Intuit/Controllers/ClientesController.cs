@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using BackEnd_Intuit.Application.Interfaces;
 using BackEnd_Intuit.Application.DTOs;
+using BackEnd_Intuit.Domain.Entities;
 
 namespace BackEnd_Intuit.Api.Controllers
 {
@@ -69,7 +70,7 @@ namespace BackEnd_Intuit.Api.Controllers
         public async Task<IActionResult> Create([FromBody] ClienteCreateDto dto)
         {
             var id = await _service.CreateAsync(dto);
-            return CreatedAtAction(nameof(GetById), new { id }, null);
+            return CreatedAtAction(nameof(GetById), new { id }, dto);
         }
 
         /// <summary>
@@ -86,7 +87,7 @@ namespace BackEnd_Intuit.Api.Controllers
         public async Task<IActionResult> Update(int id, [FromBody] ClienteUpdateDto dto)
         {
             await _service.UpdateAsync(id, dto);
-            return NoContent();
+            return Ok(dto);
         }
 
         /// <summary>
@@ -101,7 +102,7 @@ namespace BackEnd_Intuit.Api.Controllers
         public async Task<IActionResult> Delete(int id)
         {
             await _service.DeleteAsync(id);
-            return NoContent();
+            return Ok();
         }
     }
 }
